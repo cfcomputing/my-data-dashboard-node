@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src",
+    "types"
+  ],
+  "ext": "ts",
+  "env": {
+    "NODE_ENV": "development",
+    "NODE_OPTIONS": "--max-old-space-size=8192"
+  },
+  "exec": "ts-node --files src/index.ts"
+}

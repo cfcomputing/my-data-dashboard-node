@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./bin",
+    "module": "commonjs",
+    "composite": true,
+    "declaration":true,
+    "esModuleInterop": true,
+  },
+  "files": [],
+  "include": [
+    "./src/"
+  ],
+}

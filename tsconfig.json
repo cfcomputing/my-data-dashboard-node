@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client", "node"],
+    "rootDir": "./src",
+    "outDir": "./superbin",
+    "composite":true
+  },
+  "files": [
+    "./src/index.ts"
+  ],
+  "references": [
+    {
+      "path": "./packages/server"
+    },
+    {
+      "path": "./packages/client"
+    }
+  ],
+}

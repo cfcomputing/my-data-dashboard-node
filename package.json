@@ -1,0 +1,32 @@
+{
+  "name": "my-data-dashboard-node",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfcomputing/my-data-dashboard-node.git"
+  },
+  "author": "Chris Feerick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfcomputing/my-data-dashboard-node/issues"
+  },
+  "homepage": "https://github.com/cfcomputing/my-data-dashboard-node#readme",
+  "type": "module",
+  "scripts": {
+    "build:server": "tsc && node superbin/index.js",
+    "start:server": "npm run start -w @my-data-dashboard-node/server",
+    "start:client": "npm run start -w @my-data-dashboard-node/client",
+    "build:client": "npm run build -w @my-data-dashboard-node/client"
+  },
+  "dependencies": {
+    "@my-data-dashboard-node/server": "*",
+    "@my-data-dashboard-node/client": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
